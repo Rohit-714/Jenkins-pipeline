@@ -9,13 +9,13 @@ pipeline {
         stage("Test") {
             steps {
                 // mvn test
-                echo "mvn test"
+                bat "mvn test"
             }
         }
         
         stage("Build") {
             steps {
-                echo "mvn build"
+                bat "mvn build"
             }
         }
         
